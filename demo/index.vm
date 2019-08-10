@@ -1,0 +1,16 @@
+<h1>${title}</h1>
+
+#set($greet = $navigator.userAgent)
+#set($greet1 = 'deeee')
+
+#set($name = $request.getParameter("user"))
+<ul>
+    #foreach($item in $list)
+    <li>$item</li>
+    <li>hello.world。</li>
+    #end
+    <li>$greet</li>
+    <li>$greet1</li>
+    <li>$name</li>
+</ul>
+<p>Today is $now()</p>

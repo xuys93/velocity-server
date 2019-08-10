@@ -1,0 +1,31 @@
+{
+  "name": "velocity-server",
+  "version": "0.0.1",
+  "description": "velocity server",
+  "scripts": {
+    "server": "node index.js",
+    "test": "./node_modules/.bin/tape 'test/**/*.js' | ./node_modules/.bin/tap-spec",
+    "coverage": "rm -r coverage ; nyc --reporter=html npm test && nyc report",
+    "coveralls": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "keywords": [
+    "velocity"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "colors": "~1.2.1",
+    "config": "~1.30.0",
+    "coveralls": "~3.0.0",
+    "debug": "~3.1.0",
+    "express": "~4.16.3",
+    "json5": "~1.0.1",
+    "nyc": "~11.6.0",
+    "proxyquire": "~2.0.0",
+    "serve-index": "~1.9.1",
+    "sinon": "~4.4.6",
+    "tap-spec": "~4.1.1",
+    "tape": "~4.9.0",
+    "velocityjs": "~1.0.1",
+    "vinyl": "~2.1.0"
+  }
+}
